@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 900px;
+    margin: 20px auto;
+    border: 2px solid black;
+    row-gap: 25px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+header h1{
+    font-size: 20px;
+}
+span{
+    /* border: 1px solid hsl(224, 21%, 14%); */
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    padding: 4px;
+    border-radius: 6px;
+}
+.settings{
+    color: hsl(211, 68%, 94%);
+    
+}
+header p{
+    color: gray;
+}
+form{
+
+}
+.notifications{
+display: flex;
+border: 1px solid hsl(210, 60%, 98%);
+
+/* gap: 65px; */
+
+}
+/* section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} */
+.notifications
+section .unread-message{
+    background-color: hsl(205, 33%, 90%) ;
+}
+.unread-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+.read-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.username{
+    color: hsl(224, 21%, 14%);
+}
+.action-done{
+    
+    color: hsl(219, 12%, 42%);
+}
+.message{
+   
+    /* color:hsl(219, 12%, 42%); */
+    font-size: 16px;
+    color: hsl(224, 95%, 25%);
+    
+    /* - Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+/* - Light grayish blue 2: hsl(205, 33%, 90%) 
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%) */
+}
+.time-action-done{
+    color:hsl(219, 14%, 63%)
+}
+.dot{
+    background-color: red;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+/* .picture-commented{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
