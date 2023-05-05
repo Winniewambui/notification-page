@@ -9,32 +9,32 @@
 </head>
 <body>
     <main>
-    <header>
-    <h1>Notifications <span> 3 </span></h1>
-    <p class="settings"> Mark all as read </p>
-    </header>
     <form>
-        <!-- all the notifications are supposed to be input fields because of clicking them and adding event listeners -->
-    <div class="notifications">
+        <header>
+            <h1>Notifications <span> 3 </span></h1>
+            <p class="settings"> Mark all as read </p>
+            </header>
+        <fieldset>
+    <div class="notification" id="unread-notification">
         <image>
-            <img src="./images/avatar-mark-webber.webp"  class=" Mark avatar" width="50px">
+            <img src="./images/avatar-mark-webber.webp"  class=" Mark avatar" >
         </image>
         <section>
-        <div class="unread-message">
+        <div class="message">
         <h3 class="username"> Mark Webber </h3>
         <p class="action-done"> reacted to your recent post </p>
-        <p class="message"> My first tournament today!</p>
+        <p class="text"> My first tournament today!</p>
         <div class="dot"></div>
     </div>
         <div class="time-action-done"> 1m ago </div>
     </section>
 </div>
-<div class="notifications">
+<div class="notification" id="unread-notification">
         <image>
-            <img src="./images/avatar-angela-gray.webp"  class="angela avatar" width="50px">
+            <img src="./images/avatar-angela-gray.webp"  class="angela avatar" >
         </image>
         <section>
-        <div class="unread-message">
+        <div class="message">
         <h3 class="username">Angela Gray </h3>
         <p class="action-done">followed you</p>
         <div class="dot"></div>
@@ -42,40 +42,42 @@
         <div class="time-action-done"> 5m ago </div>
     </section>
 </div>
-    <div class="notifications">
+    <div class="notification" id="unread-notification">
         <image>
-            <img src="./images/avatar-jacob-thompson.webp"  class="Jacob avatar" width="50px">
+            <img src="./images/avatar-jacob-thompson.webp"  class="Jacob avatar">
         </image>
         <section>
-        <div class="unread-message">
-        <div class="username">Jacob Thompson</div>
-        <div class="action-done"> has joined your group </div>
-        <div class="message">Chess Club</div>
+        <div class="message">
+        <h3 class="username">Jacob Thompson</h3>
+        <p class="action-done"> has joined your group </p>
+       <p class="text"> <b> Chess Club </b> </p>   <!-- blue and bold -->
         <div class="dot"></div>
     </div>
         <div class="time-action-done"> 1 day ago </div>
     </section>
 </div>
-    <!-- <div class="notifications">
+    <div class="notification" id="private-read-notification">
+        <div class="private-username">
         <image>
-            <img src="./images/avatar-rizky-hasanuddin.webp"  class="Rizky avatar" width="50px">
+            <img src="./images/avatar-rizky-hasanuddin.webp"  class="Rizky avatar" >
         </image>
         <section>
-        <div class="read-message">
-        <div class="username">Rizky Hasanuddin </div>
-        <div class="action-done">sent you a private message </div>
-        <div class="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.  </div>
+        <div class="message" id="read-message">
+        <h3 class="username">Rizky Hasanuddin </h3>
+        <p class="action-done">sent you a private message </p>
     </div>
         <div class="time-action-done">5 days ago </div>
+    </div>
+        <p class="text" id="private-text">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.  </p>
 </section>
-</div> -->
+</div>
 
-    <div class="notifications">
+    <div class="notification" id="read-notification">
         <image>
-            <img src="./images/avatar-kimberly-smith.webp"  class="Kimberly avatar" width="50px">
+            <img src="./images/avatar-kimberly-smith.webp"  class="Kimberly avatar" >
         </image>
         <section>
-        <div class="read-message">
+        <div class="message" id="picture-commented">
         <h3 class="username">Kimberly Smith</h3>
         <p class="action-done"> commented on your picture </p>
         <image>
@@ -85,39 +87,34 @@
         <div class="time-action-done"> 1 week ago</div>
 </section>
 </div>
-    <div class="notifications">
+    <div class="notification" id="read-notification">
         <image>
-            <img src="./images/avatar-nathan-peterson.webp"  class="Nathan avatar" width="50px">
+            <img src="./images/avatar-nathan-peterson.webp"  class="Nathan avatar">
         </image>
         <section>
-        <div class="read-message">
+        <div class="message" id="nathan-message">
         <h3 class="username"> Nathan Peterson</h3>
         <p class="action-done"> reacted to your recent post </p>
-        <p class="message">5 end-game strategies to increase your win rate </p>
+        <p class="text">5 end-game strategies to increase your win rate </p>
     </div>
         <div class="time-action-done">2 weeks ago </div>
 </section>
 </div>
 
-    <div class="notifications">
+    <div class="notification"  id="read-notification">
         <image>
-            <img src="./images/avatar-anna-kim.webp"  class="Anna avatar" width="50px">
+            <img src="./images/avatar-anna-kim.webp"  class="Anna avatar">
         </image>
         <section>
-    <div class="read-message">
+    <div class="message">
         <h3 class="username">Anna Kim</h3>
         <p class="action-done">left the group </p>
-        <p class="message"> Chess Club </p>
+        <p class="text"> <b> Chess Club </b> </p>   <!-- blue and bold -->
     </div>
         <div class="time-action-done">2 weeks ago</div>
   </section>
 </div>
-
-    <!-- <div class="notifications">
-        <div class="username"></div>
-        <div class="action-done"></div>
-        <div class="message"></div>
-    </div> -->
+</fieldset>
 </form>
 </main>
 
